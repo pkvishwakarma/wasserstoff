@@ -4,6 +4,7 @@
 import { useState, useEffect } from "react";
 import CollectionPage from "../astrix-collection-page/page";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function BodyPage() {
     // Pankaj Vishwakarma:10/04/2024 : using State to Handle Component reusability..
@@ -41,7 +42,7 @@ export default function BodyPage() {
                 <div>
                     {/* Pankaj Vishwakarma:10/04/2024 : Heading Container.. */}
                     <div className="pt-5 ps-4 mb-10">
-                        <div className="flex items-center"><img src="/images/astrix_body_images/astrix_branding_logo.png" alt="logoImg" className="md:lg:xl:w-[48px] sm:w-[30px]" /><span className="md:lg:xl:ms-2 md:lg:xl:text-4xl text-[#FFCA5F] font-bold sm:text-2xl sm:ms-2">Astrix.</span></div>
+                        <div className="flex items-center"><Image src="/images/astrix_body_images/astrix_branding_logo.png" alt="logoImg" width={'100'} height={'100'} className="md:lg:xl:w-[48px] sm:w-[30px]" /><span className="md:lg:xl:ms-2 md:lg:xl:text-4xl text-[#FFCA5F] font-bold sm:text-2xl sm:ms-2">Astrix.</span></div>
                     </div>
 
                     {/* Pankaj Vishwakarma:10/04/2024 : OnClick Component Container.. */}
@@ -119,33 +120,33 @@ export default function BodyPage() {
                     <div className="w-32 font-bold text-3xl my-4">Meta Lives</div>
                     <div className="w-32 w-1/2 font-black text-base my-2">Live in Astrix</div>
                     <p className="w-1/2 font-light text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minus a necessitatibus porro obcaecati corrupti.</p>
-                    <div className="mt-6 flex items-center"><img src="/images/astrix_body_images/collectionImg/Frame7.png" alt="frame7" className="" /><p className="w-2/5 font-semibold text-xs">22k peaplr interested</p></div>
+                    <div className="mt-6 flex items-center"><Image src="/images/astrix_body_images/collectionImg/Frame7.png" alt="frame7" width={'150'} height={'150'} /><p className="w-2/5 font-semibold text-xs">22k peaplr interested</p></div>
                     <div className="mt-6">
                         <p className="mt-4">Collectibles</p>
                         <div className="flex h-[29vh]">
-                            <img src="/images/astrix_body_images/collectionImg/CardcollectionsFrame8.png" alt="cardcollection1" className="me-4" />
-                            <img src="/images/astrix_body_images/collectionImg/CardcollectionsFrame8.png" alt="cardcollection2" className="me-4" />
-                            <img src="/images/astrix_body_images/collectionImg/CardcollectionsFrame8.png" alt="cardcollection3" />
+                            <Image src="/images/astrix_body_images/collectionImg/CardcollectionsFrame8.png" alt="cardcollection1" width={'150'} height={'1'} className="me-4" />
+                            <Image src="/images/astrix_body_images/collectionImg/CardcollectionsFrame8.png" alt="cardcollection2" width={'150'} height={'1'} className="me-4" />
+                            <Image src="/images/astrix_body_images/collectionImg/CardcollectionsFrame8.png" alt="cardcollection3" width={'150'} height={'1'} />
                         </div>
-                        <div className="relative"><img src="/images/astrix_body_images/collectionImg/JoinBtn.png" alt="btn" className="w-[130px] absolute right-16 top-6" /></div>
+                        <div className="relative"><Image src="/images/astrix_body_images/collectionImg/JoinBtn.png" alt="btn" width={'100'} height={'100'} className="w-[130px] absolute right-16 top-6" /></div>
                     </div>
                 </div>
                 :
                 <div className="text-white">
                     <h2 className="w-1/2 font-black text-base mb-8">Explore Your First Event</h2>
                     <div className="w-42 font-bold text-3xl my-4">Event Name</div>
-                    <div className="w-32 w-2/3 font-black text-base my-2 flex items-center"><img src="/images/astrix_body_images/collectionImg/vanue.png" alt="vanue" className="w-[15px] me-1" /><span>Vanue</span><img src="/images/astrix_body_images/collectionImg/clock.png" alt="clock" className="w-[15px] ms-4 me-1" /><span>04/03/2024 @19:00</span></div>
+                    <div className="w-32 w-3/4 font-black text-base my-2 flex items-center"><Image src="/images/astrix_body_images/collectionImg/vanue.png" alt="vanue" width={'10'} height={'10'} className="w-[15px] me-1" /><span>Vanue</span><Image src="/images/astrix_body_images/collectionImg/clock.png" alt="clock" width={'100'} height={'100'} className="w-[15px] ms-4 me-1" /><span>04/03/2024 @19:00</span></div>
                     <p className="w-1/2 font-light text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minus a necessitatibus porro obcaecati corrupti.</p>
                     <div className="mt-6">
                         <p className="my-8 font-black text-base">Artist LineUp</p>
                         <div className="flex h-[29vh] items-center">
-                            <img src="/images/astrix_body_images/collectionImg/Frame9.png" alt="cardcollection1" className="h-[20vh]" />
-                            <img src="/images/astrix_body_images/collectionImg/Frame10.png" alt="cardcollection2" className="w-[40%]" />
-                            <img src="/images/astrix_body_images/collectionImg/Frame11.png" alt="cardcollection3" className="h-[20vh]" />
+                            <Image src="/images/astrix_body_images/collectionImg/Frame9.png" alt="cardcollection1" width={'100'} height={'100'} className="h-[20vh]" />
+                            <Image src="/images/astrix_body_images/collectionImg/Frame10.png" alt="cardcollection2" width={'100'} height={'100'} className="w-[40%]" />
+                            <Image src="/images/astrix_body_images/collectionImg/Frame11.png" alt="cardcollection3" width={'100'} height={'100'} className="h-[20vh]" />
                         </div>
                         <div className="relative">
-                        <img src="/images/astrix_body_images/collectionImg/JoinBtn.png" alt="btn" className="w-[130px] absolute right-16 top-16" />
-                        <img src="/images/astrix_body_images/collectionImg/QrImage.png" alt="btn" className="w-[80px] absolute left-0 top-6" />
+                        <Image src="/images/astrix_body_images/collectionImg/JoinBtn.png" alt="btn" width={'100'} height={'100'} className="w-[130px] absolute right-16 top-16" />
+                        <Image src="/images/astrix_body_images/collectionImg/QrImage.png" alt="btn" width={'100'} height={'100'} className="w-[80px] absolute left-0 top-6" />
                         </div>
                     </div>
                 </div>

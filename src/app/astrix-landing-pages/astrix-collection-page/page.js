@@ -1,11 +1,12 @@
 // Pankaj Vishwakarma:11/04/2024 : Astrix Landing page for both Collection and Event Component Starts..
 "use client";
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 // Pankaj Vishwakarma:11/04/2024 : Passing Collection and Events Images/Title using Props..
 export default function CollectionPage(props) {
     const [currentIndex, setCurrentIndex] = useState(0);
-    var images = props?.images;
+    var images = props.images;
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -22,8 +23,8 @@ export default function CollectionPage(props) {
             <div className={`${props.name === 'COLLECTIBLE' ? '-mt-[590px]' : '-mt-[470px]'} w-[62%]`}>
                 <div className="w-full overflow-hidden">
                     <div className="flex transition-transform duration-1000 ease-in-out ms-[400px]" style={{ transform: `translateX(-${currentIndex * 60}%)` }}>
-                        {images.map((image, index) => (
-                            <img key={index} src={image} alt={`slide-${index}`} className="w-3/5 h-[70vh] me-4" />
+                        {images?.map((image, index) => (
+                            <Image key={index} src={image} alt={`slide-${index}`} width={'100'} height={'100'} className="w-3/5 h-[70vh] me-4" />
                         ))}
                     </div>
                 </div>

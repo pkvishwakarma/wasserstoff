@@ -1,24 +1,25 @@
 // Pankaj Vishwakarma:10/04/2024 : SplaceScreen Component Starts..
 "use client"
 import Link from "next/link";
+import Image from "next/image";
 
 export default function SplaceScreen() {
     return (
         <div className="bg-[#FFF4DF] w-full h-screen overflow-hidden">
             {/* Pankaj Vishwakarma:10/04/2024 : Heading Container.. */}
             <div className="pt-12 ps-8 mb-10">
-                <div className="flex items-center"><img src="/images/splacescreen/EmlblemSplaceScreenLogo.png" alt="logoImg" className="md:lg:xl:w-[48px] sm:w-[30px]" /><span className="md:lg:xl:ms-2 md:lg:xl:text-4xl text-black font-bold sm:text-2xl sm:ms-2">Astrix.</span></div>
+                <div className="flex items-center"><Image src="/images/splacescreen/EmlblemSplaceScreenLogo.png" alt="logoImg" width={'100'} height={'100'} className="md:lg:xl:w-[48px] sm:w-[30px]" /><span className="md:lg:xl:ms-2 md:lg:xl:text-4xl text-black font-bold sm:text-2xl sm:ms-2">Astrix.</span></div>
             </div>
             {/* Pankaj Vishwakarma:10/04/2024 : Image and Word JSX Elements Start.. */}
             <div className="flex flex-col ms-40 me-10">
                 <div className="w-[69vw] overflow-hidden">
-                    <div className="flex text-6xl font-bold font-[monospace] items-center w-screen mb-4">WE<img src="/images/splacescreen/Frame1.png" alt="frameimg1" className="w-[378px] h-[60px] ms-4" /><span className="splaceEffect1 bg-[#FFF4DF] ps-3">ORGANIZE THE</span></div>
-                    <div className="flex text-6xl font-bold font-[monospace] items-center w-screen mb-4">CONNECTION <img src="/images/splacescreen/Frame2.png" alt="frameimg2" className="w-[520px] h-[60px] ms-4" /><span className="splaceEffect2 bg-[#FFF4DF] ps-3 w-52 h-16"></span></div>
+                    <div className="flex text-6xl font-bold font-[monospace] items-center w-screen mb-4">WE<Image src="/images/splacescreen/Frame1.png" alt="frameimg1" width={'100'} height={'100'} className="w-[378px] h-[60px] ms-4" /><span className="splaceEffect1 bg-[#FFF4DF] ps-3">ORGANIZE THE</span></div>
+                    <div className="flex text-6xl font-bold font-[monospace] items-center w-screen mb-4">CONNECTION <Image src="/images/splacescreen/Frame2.png" alt="frameimg2" width={'100'} height={'100'} className="w-[520px] h-[60px] ms-4" /><span className="splaceEffect2 bg-[#FFF4DF] ps-3 w-52 h-16"></span></div>
                 </div>
                 <div className="w-[69vw]">
-                    <div className="flex text-6xl font-bold font-[monospace] items-center w-screen mb-4"><img src="/images/splacescreen/Frame3.png" alt="frameimg3" className="w-[360px] h-[60px]" /><div className="splaceEffect3 bg-[#FFF4DF] flex ps-3 -m-[80px]">BETWEEN <img src="/images/splacescreen/Frame4.png" alt="frameimg4" className="w-[150px] h-[60px] ms-4 me-4" /> MUSIC</div></div>
-                    <div className="flex text-6xl font-bold font-[monospace] items-center w-screen mb-4">ARTIST<img src="/images/splacescreen/Frame5.png" alt="frameimg5" className="w-[250px] h-[60px] ms-4" /><span className="splaceEffect4 flex bg-[#FFF4DF] ps-3">CULTURE <img src="/images/splacescreen/Frame6.png" alt="frameimg6" className="w-[320px] h-[60px] ps-3" /></span><span className="splaceEffect5 bg-[#FFF4DF] ps-3 w-52 h-16 -m-[157px]"></span></div>
-                    <div className="flex text-6xl font-bold font-[monospace] items-center w-screen"><img src="/images/splacescreen/Frame7.png" alt="frameimg7" className="w-[267px] h-[60px]" /><span className="splaceEffect6 flex bg-[#FFF4DF] ps-3 -m-[85px]">ART<img src="/images/splacescreen/Frame8.png" alt="frameimg8" className="w-[150px] h-[60px] pe-3" />& COLLECTIONS</span></div>
+                    <div className="flex text-6xl font-bold font-[monospace] items-center w-screen mb-4"><Image src="/images/splacescreen/Frame3.png" alt="frameimg3" width={'100'} height={'100'} className="w-[360px] h-[60px]" /><div className="splaceEffect3 bg-[#FFF4DF] flex ps-3 -m-[80px]">BETWEEN <Image src="/images/splacescreen/Frame4.png" alt="frameimg4" width={'100'} height={'100'} className="w-[150px] h-[60px] ms-4 me-4" /> MUSIC</div></div>
+                    <div className="flex text-6xl font-bold font-[monospace] items-center w-screen mb-4">ARTIST<Image src="/images/splacescreen/Frame5.png" alt="frameimg5" width={'100'} height={'100'} className="w-[250px] h-[60px] ms-4" /><span className="splaceEffect4 flex bg-[#FFF4DF] ps-3">CULTURE <Image src="/images/splacescreen/Frame6.png" alt="frameimg6" width={'100'} height={'100'} className="w-[320px] h-[60px] ps-3" /></span><span className="splaceEffect5 bg-[#FFF4DF] ps-3 w-52 h-16 -m-[157px]"></span></div>
+                    <div className="flex text-6xl font-bold font-[monospace] items-center w-screen"><Image src="/images/splacescreen/Frame7.png" alt="frameimg7" width={'100'} height={'100'} className="w-[267px] h-[60px]" /><span className="splaceEffect6 flex bg-[#FFF4DF] ps-3 -m-[85px]">ART<Image src="/images/splacescreen/Frame8.png" alt="frameimg8" width={'100'} height={'100'} className="w-[150px] h-[60px] pe-3" />& COLLECTIONS</span></div>
                 </div>
             </div>
             {/* Pankaj Vishwakarma:10/04/2024 : Image and Word JSX Element End.. */}
